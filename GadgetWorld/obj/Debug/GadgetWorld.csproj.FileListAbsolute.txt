@@ -1,0 +1,195 @@
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\GadgetWorld.dll.config
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\GadgetWorld.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\GadgetWorld.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\csc.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\csc.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\csc.rsp
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\csi.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\csi.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\csi.rsp
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.Managed.Core.targets
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.AppContext.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Collections.Immutable.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Console.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.Compression.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.FileSystem.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.Pipes.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Reflection.Metadata.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.AccessControl.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Claims.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Principal.Windows.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.ValueTuple.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.XmlDocument.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.XPath.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\vbc.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\vbc.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\vbc.rsp
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\VBCSCompiler.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\roslyn\VBCSCompiler.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Antlr3.Runtime.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\EntityFramework.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\EntityFramework.SqlServer.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Microsoft.Web.Infrastructure.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Newtonsoft.Json.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Diagnostics.DiagnosticSource.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Helpers.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Mvc.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Optimization.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Razor.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Deployment.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Razor.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\WebGrease.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\EntityFramework.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\EntityFramework.SqlServer.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Helpers.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Mvc.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Optimization.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.Razor.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Deployment.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Razor.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Newtonsoft.Json.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Antlr3.Runtime.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\System.Diagnostics.DiagnosticSource.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._1.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._2.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._015.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._4.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._01.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._02.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._04.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._05.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._1134435353.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._00001.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._97931231.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._879871323.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._35553454.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csproj.GenerateResource.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csproj.CoreCompileInputs.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csproj.CopyComplete
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder (3)\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\GadgetWorld.dll.config
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\GadgetWorld.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\GadgetWorld.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\csc.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\csc.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\csc.rsp
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\csi.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\csi.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\csi.rsp
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.Managed.Core.targets
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.AppContext.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Collections.Immutable.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Console.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.Compression.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.FileSystem.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.IO.Pipes.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Reflection.Metadata.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.AccessControl.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Claims.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Security.Principal.Windows.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.ValueTuple.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.XmlDocument.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.XPath.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\vbc.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\vbc.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\vbc.rsp
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\VBCSCompiler.exe
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\roslyn\VBCSCompiler.exe.config
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Antlr3.Runtime.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\EntityFramework.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\EntityFramework.SqlServer.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Microsoft.Web.Infrastructure.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Newtonsoft.Json.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Diagnostics.DiagnosticSource.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Helpers.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Mvc.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Optimization.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Razor.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Deployment.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Razor.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\WebGrease.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\EntityFramework.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\EntityFramework.SqlServer.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Helpers.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Mvc.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Optimization.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.Razor.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Deployment.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Web.WebPages.Razor.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Newtonsoft.Json.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Antlr3.Runtime.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\System.Diagnostics.DiagnosticSource.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._1.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._2.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._015.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._4.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._01.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._02.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._04.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._05.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._1134435353.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._00001.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._97931231.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._879871323.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.Migrations._35553454.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csproj.GenerateResource.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csproj.CoreCompileInputs.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csproj.CopyComplete
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\GadgetWorld\GadgetWorld\obj\Debug\GadgetWorld.csprojAssemblyReference.cache
