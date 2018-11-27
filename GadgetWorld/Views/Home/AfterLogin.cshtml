@@ -12,6 +12,9 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -72,7 +75,16 @@
                             <span class="fas fa-envelope"></span>
                             <p><a href="mailto:info@gadgetworld.com">info@gadgetworld.com</a></p>
                         </li>
-                        <li><h1> @ViewBag.Message</h1></li>
+                        <li><h1> @ViewBag.Message</h1></li>                                                                          
+                                <li style="float:right; "> 
+                                    @if (Request.IsAuthenticated)
+                                    {
+                                        using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
+                                        }
+                                    }
+                                </li>                                                         
                         <li>
                         </li>
                         <li>
@@ -762,7 +774,8 @@
                             <div class="register-form">
                                 <form action="#" method="post">
                                     <div class="fields-grid">
-
+                                        
+                                        
                                         @HttpContext.Current.User.Identity.Name
 
                                         @if (Request.IsAuthenticated)
@@ -772,6 +785,18 @@
                                                 <a href="javascript:document.getElementById('logoutForm').submit()" class="btn subscrib-btnn">Logout</a>
                                             }
                                         }
+
+
+
+                                        @*@HttpContext.Current.User.Identity.Name
+
+                                        @if (Request.IsAuthenticated)
+                                        {
+                                            using (Html.BeginForm("Logout", "Home", FormMethod.Post, new {id = "logoutForm"}))
+                                            {
+                                                <a href="javascript:document.getElementById('logoutForm').submit()" class="btn subscrib-btnn">Logout</a>
+                                            }
+                                        }*@
 
 
 
