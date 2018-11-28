@@ -140,7 +140,7 @@ namespace GadgetWorld.Controllers
 
 
 
-        public ActionResult Registration()
+        public ActionResult Reg()
         {
             User user =new User();
             user.Type = "Customer";
@@ -151,7 +151,7 @@ namespace GadgetWorld.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Registration(User user)
+        public ActionResult Reg(User user)
         {
             bool Status = false;
             string message = "";
