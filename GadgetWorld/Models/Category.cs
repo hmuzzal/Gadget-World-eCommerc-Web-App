@@ -5,7 +5,7 @@ using System.Web;
 
 namespace GadgetWorld.Models
 {
-    public class Catagory
+    public class Category
     {
         public int CatagoryId { get; set; }
         public string CatagoryType { get; set; }

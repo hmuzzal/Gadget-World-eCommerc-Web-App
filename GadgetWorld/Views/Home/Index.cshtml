@@ -175,7 +175,16 @@
                         <div class="slider-img one-img">
                             <div class="container">
                                 <div class="slider-info ">
-                                    <h5>Pick The Best Toy For <br>Your Kid</h5>
+
+
+
+                                    @*<h6>@ViewBag.Message</h6>*@
+                                    <div class="wrap">
+                                        <h5>@ViewBag.Message</h5>
+                                    </div>
+                                   
+                                    
+                                    <h5><br>Pick The Best Toy For Kid</h5>
                                     <div class="bottom-info">
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
                                     </div>
@@ -783,6 +792,7 @@
                                         </div>
 
                                         <input type="submit" id="button_login" value="Login" class="btn subscrib-btnn" />
+                                        @Html.ActionLink("Sign Up", "Reg", "Home", new { @class = "btn subscrib-btnn" })
                                         @*<button type="submit" class="btn subscrib-btnn">Login</button>*@
 
                                     </div>
@@ -892,8 +902,16 @@
         });
     </script>
     <!-- start-smoth-scrolling -->
-    <!-- here stars scrolling icon -->
+<!-- here stars scrolling icon -->
+
     <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.wrap p').fadeOut();
+            }, 40);
+        });
+    </script>
+<script>
         $(document).ready(function () {
 
             var defaults = {
@@ -908,9 +926,18 @@
 
         });
     </script>
-    <!-- //here ends scrolling icon -->
-    <!--bootstrap working-->
-    <script src="~/Content/Content_final/js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        setTimeout(function() {
+            $("#myMessage").hide();
+        }, 5);
+    });
+</script>
+
+
+< !-- //here ends scrolling icon -->
+    < !--bootstrap working-- >
+        <script src="~/Content/Content_final/js/bootstrap.min.js"></script>
     <!-- //bootstrap working-->
 </body>
 </html>

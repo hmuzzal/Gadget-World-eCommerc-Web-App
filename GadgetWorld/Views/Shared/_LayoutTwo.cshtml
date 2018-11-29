@@ -123,8 +123,8 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         @*<li class="nav-item">
-                                <a href="service.html" class="nav-link">Service</a>
-                            </li>*@
+                            <a href="service.html" class="nav-link">Service</a>
+                        </li>*@
                         <li class="nav-item">
                             <a href="shop.html" class="nav-link">Shop Now</a>
                         </li>
@@ -248,6 +248,9 @@
         </footer>
         <!-- //footer -->
         <!-- LOGIN-->
+
+
+
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
@@ -265,33 +268,19 @@
                             <div class="register-form">
                                 <div class="register-form">
                                     <form action="#" method="post">
-                                        <div class="fields-grid">
-                                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                                            <div class="styled-input">
-                                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Your Email" } })
-                                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                                            </div>
-
-
-                                            <div class="styled-input">
-                                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "password" } })
-                                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                            </div>
-
+                                        <div class="fields-grid">                                           
 
                                             <div class="form-group">
                                                 <div class="col-md-10">
                                                     <div class="checkbox">
-                                                        @*@Html.EditorFor(model => model.RememberMe)
-                                                        @Html.ValidationMessageFor(model => model.RememberMe, "", new { @class = "text-danger" })
-                                                        @Html.LabelFor(model => model.RememberMe, htmlAttributes: new { @class = "control-label col-md-2" })*@
+
                                                     </div>
                                                 </div>
 
 
                                             </div>
-
-                                            <input type="submit" id="button_login" value="Login" class="btn subscrib-btnn" />
+                                            @Html.ActionLink("Login", "Login", "Home", new { @class = "btn subscrib-btnn" })
+                                                                                                                           
                                             @*<button type="submit" class="btn subscrib-btnn">Login</button>*@
 
                                         </div>
@@ -308,6 +297,8 @@
 
 
         }
+
+  
 
 
 

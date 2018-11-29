@@ -31,8 +31,25 @@ namespace GadgetWorld.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            return View(db.Users.ToList());
+           
+
+            return View();
         }
+
+
+
+
+
+        [Authorize]
+        public ActionResult UserList()
+        {
+
+            List<User> users = db.Users.ToList();
+            return View();
+        }
+
+
+
 
 
 

@@ -19,10 +19,15 @@ namespace GadgetWorld.Controllers
         private GwDbContext db = new GwDbContext();
 
 
+       
+
+
+
         [HttpGet]
         public ActionResult Index()
         {
-
+            var message = TempData["Message"] as string;
+            ViewBag.Message = message;
             return View();
         }
 
@@ -99,6 +104,97 @@ namespace GadgetWorld.Controllers
             ViewBag.Message = message;
             return View();
         }
+
+
+
+
+
+
+        [HttpGet]
+        public ActionResult Login()
+        {
+
+            var message = TempData["Message"] as string;
+            ViewBag.Message = message;
+            return View();
+        }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(UserLoginModel userLoginModel, string ReturnUrl = "")
+        {
+            string message = "";
+
+
+            using (GwDbContext context = new GwDbContext())
+            {
+                var v = context.Users.Where(a => a.Email == userLoginModel.Email).FirstOrDefault();
+                if (v != null)
+                {
+                    if (string.Compare(Crypto.Hash(userLoginModel.Password), v.Password) == 0)
+                    {
+                        int timeOut = userLoginModel.RememberMe ? 525600 : 1;
+                        var ticket =
+                            new FormsAuthenticationTicket(userLoginModel.Email, userLoginModel.RememberMe, timeOut);
+                        string enctypted = FormsAuthentication.Encrypt(ticket);
+                        var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, enctypted);
+                        cookie.Expires = DateTime.Now.AddMinutes(timeOut);
+                        cookie.HttpOnly = true;
+                        Response.Cookies.Add(cookie);
+
+
+                        if (Url.IsLocalUrl(ReturnUrl))
+                        {
+                            return Redirect(ReturnUrl);
+                        }
+                        else
+                        {
+                            #region MINE
+
+                            if (v.Type == "Admin")
+                            {
+
+                                return RedirectToActionPermanent("Index", "Admin");
+
+                            }
+
+
+                            #endregion
+
+                            else
+                            {
+
+                                return RedirectToActionPermanent("AfterLogin", "Home");
+                            }
+
+                        }
+
+                    }
+                    else
+                    {
+                        message = "Invalid credential provided";
+                    }
+
+                }
+                else
+                {
+                    message = "Invalid credential provided";
+                }
+
+            }
+
+
+            ViewBag.Message = message;
+            return View();
+        }
+
+
+
+
+
+
 
 
 
@@ -191,8 +287,9 @@ namespace GadgetWorld.Controllers
                     //send email to user
                     //SendVerificationEmail(user.Email);
                     //message = "Registration Successful"+"An email has been to your Email:"+user.Email;
-                    message = "successful";
+                    message = "Registered successfully";
                     Status = true;
+                   
                 }
                 #endregion
             }
@@ -202,10 +299,10 @@ namespace GadgetWorld.Controllers
 
             }
 
-
+            TempData["Message"] = message;
             ViewBag.Message = message;
             ViewBag.Status = Status;
-            return View(user);
+            return RedirectToAction("Index", "Home");
         }
 
 

@@ -272,7 +272,6 @@ D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\bin\System.Diagnostics.DiagnosticSource.xml
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csprojAssemblyReference.cache
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations._1.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations._2.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations._015.resources
@@ -291,3 +290,5 @@ D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.CopyComplete
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.dll
 D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csprojAssemblyReference.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.productupadted.resources

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -11,8 +12,8 @@ namespace GadgetWorld.Models
     {
         public int ProductId { get; set; }
 
-        [DisplayName("Product Catagory")]
-        public int CataCatagoryId { get; set; }
+        [DisplayName("Product Category")]
+        public string CategoryName { get; set; }
 
         public string ProductName { get; set; }
 
@@ -24,10 +25,14 @@ namespace GadgetWorld.Models
     
         public int Quantity { get; set; }
 
-        [DisplayName("    ")]
-        public string ImageLink { get; set; }
+        //[DisplayName("Image")]
+        //public string ImageLink { get; set; }
 
-        public Catagory Catagory { get; set; }             
+
+        public byte[] ImageData { get; set; }
+
+        [NotMapped]
+        public Category Category { get; set; }             
 
 
     }
