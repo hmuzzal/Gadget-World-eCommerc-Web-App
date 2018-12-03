@@ -205,6 +205,18 @@
     <Compile Include="Migrations\201812030826007_productIdNotNUllabe.Designer.cs">
       <DependentUpon>201812030826007_productIdNotNUllabe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812031017218_product 1.cs" />
+    <Compile Include="Migrations\201812031017218_product 1.Designer.cs">
+      <DependentUpon>201812031017218_product 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812031101454_product 2.cs" />
+    <Compile Include="Migrations\201812031101454_product 2.Designer.cs">
+      <DependentUpon>201812031101454_product 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812031148505_product 13123.cs" />
+    <Compile Include="Migrations\201812031148505_product 13123.Designer.cs">
+      <DependentUpon>201812031148505_product 13123.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Crypto.cs" />
@@ -721,6 +733,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -786,6 +799,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812030826007_productIdNotNUllabe.resx">
       <DependentUpon>201812030826007_productIdNotNUllabe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812031017218_product 1.resx">
+      <DependentUpon>201812031017218_product 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812031101454_product 2.resx">
+      <DependentUpon>201812031101454_product 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812031148505_product 13123.resx">
+      <DependentUpon>201812031148505_product 13123.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

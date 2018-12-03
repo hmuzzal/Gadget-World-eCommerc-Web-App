@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Data.SqlTypes;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -222,15 +224,64 @@ namespace GadgetWorld.Controllers
 
 
 
+        //[HttpGet]
+        //public ActionResult CreateProduct()
+        //{
+
+
+        //    ViewBag.Category = db.Categories.Select(c => new SelectListItem
+        //    {
+        //        Value = c.CatagoryId.ToString(),
+        //        Text = c.CatagoryType
+        //    }).ToList();
+
+
+
+        //    return View();
+
+        //}
+
+        [HttpGet]
         public ActionResult CreateProduct()
         {
-            //var model=new ProductCreateViewModel();
+            var model = new ProductCreateViewModel();
             //model.CategoryList = db.Categories.Select(c => new SelectListItem
             //{
             //    Value = c.CatagoryId.ToString(),
             //    Text = c.CatagoryType
             //}).ToList();
 
+
+            ViewBag.Category = db.Categories.Select(c => new SelectListItem
+            {
+                Value = c.CatagoryId.ToString(),
+                Text = c.CatagoryType
+            }).ToList();
+
+
+
+            return View();
+
+        }
+
+
+
+
+
+
+
+
+        [HttpPost]
+        public ActionResult CreateProduct(Product product)
+        {
+
+
+            string FileName = Path.GetFileNameWithoutExtension(product.ImageFile.FileName);
+            string Extensiton = Path.GetExtension(product.ImageFile.FileName);
+            FileName = FileName + DateTime.Now.ToString("yymmssfff") + Extensiton;
+            product.ImagePath = "~/Content/Image/" + FileName;
+            FileName = Path.Combine(Server.MapPath("~/Content/Image/"), FileName);
+            product.ImageFile.SaveAs(FileName);
 
             ViewBag.Category=db.Categories.Select(c => new SelectListItem
             {
@@ -239,7 +290,9 @@ namespace GadgetWorld.Controllers
             }).ToList();
           
          
-
+            db.Products.Add(product);
+            db.SaveChanges();
+            ModelState.Clear();
             return View();
 
         }

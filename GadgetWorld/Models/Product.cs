@@ -33,7 +33,13 @@ namespace GadgetWorld.Models
         //public string ImageLink { get; set; }
 
 
-        public byte[] ImageData { get; set; }
+        [DisplayName("Upload Image")]
+        public string ImagePath { get; set; }
+
+        public string Title { get; set; }
+
+        [NotMapped]
+        public HttpPostedFileBase ImageFile { get; set; }
 
     }
 }
