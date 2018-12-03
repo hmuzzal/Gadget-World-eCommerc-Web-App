@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace GadgetWorld.Models
 {
@@ -13,8 +14,11 @@ namespace GadgetWorld.Models
         public int ProductId { get; set; }
 
         [DisplayName("Product Category")]
-        public string CategoryName { get; set; }
 
+        [Display(Name = "Category")]
+        public int CategoryId { get; set; }
+
+        [DisplayName("Product Name")]
         public string ProductName { get; set; }
 
         public string Description { get; set; }
@@ -30,10 +34,6 @@ namespace GadgetWorld.Models
 
 
         public byte[] ImageData { get; set; }
-
-        [NotMapped]
-        public Category Category { get; set; }             
-
 
     }
 }

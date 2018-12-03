@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using GadgetWorld.Models;
+using Microsoft.Ajax.Utilities;
 
 namespace GadgetWorld.Controllers
 {
@@ -18,7 +22,7 @@ namespace GadgetWorld.Controllers
 
         // GET: Admin
 
-       
+
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
@@ -31,7 +35,7 @@ namespace GadgetWorld.Controllers
         [Authorize]
         public ActionResult Index()
         {
-           
+
 
             return View();
         }
@@ -60,11 +64,13 @@ namespace GadgetWorld.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             User user = db.Users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();
             }
+
             return View(user);
         }
 
@@ -87,7 +93,7 @@ namespace GadgetWorld.Controllers
         public ActionResult Create(User user)
         {
             bool Status = false;
-            string message = "";          
+            string message = "";
             user.Type = "Admin";
 
             if (ModelState.IsValid)
@@ -100,22 +106,24 @@ namespace GadgetWorld.Controllers
                 }
 
                 #region Password Hashing            
+
                 user.Password = Crypto.Hash(user.Password);
                 user.RepeatPassword = Crypto.Hash(user.RepeatPassword);
+
                 #endregion
 
-             
 
-                
 
-                    db.Users.Add(user);
-                    db.SaveChanges();
 
-                    message = "successful";
-                    Status = true;
 
-                    //return RedirectToAction("Index");
-                
+                db.Users.Add(user);
+                db.SaveChanges();
+
+                message = "successful";
+                Status = true;
+
+                //return RedirectToAction("Index");
+
             }
 
             else
@@ -142,11 +150,13 @@ namespace GadgetWorld.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             User user = db.Users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();
             }
+
             return View(user);
         }
 
@@ -155,7 +165,9 @@ namespace GadgetWorld.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Type,Name,Email,ContactNumber,Address,Gender,DateOfBirth,Password")] User user)
+        public ActionResult Edit(
+            [Bind(Include = "Id,Type,Name,Email,ContactNumber,Address,Gender,DateOfBirth,Password")]
+            User user)
         {
             if (ModelState.IsValid)
             {
@@ -163,6 +175,7 @@ namespace GadgetWorld.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+
             return View(user);
         }
 
@@ -173,11 +186,13 @@ namespace GadgetWorld.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             User user = db.Users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();
             }
+
             return View(user);
         }
 
@@ -198,12 +213,36 @@ namespace GadgetWorld.Controllers
             {
                 db.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
 
 
 
+
+
+        public ActionResult CreateProduct()
+        {
+            //var model=new ProductCreateViewModel();
+            //model.CategoryList = db.Categories.Select(c => new SelectListItem
+            //{
+            //    Value = c.CatagoryId.ToString(),
+            //    Text = c.CatagoryType
+            //}).ToList();
+
+
+            ViewBag.Category=db.Categories.Select(c => new SelectListItem
+            {
+                Value = c.CatagoryId.ToString(),
+                Text = c.CatagoryType
+            }).ToList();
+          
+         
+
+            return View();
+
+        }
 
 
 
@@ -238,8 +277,9 @@ namespace GadgetWorld.Controllers
 
             var fromEmailPassword = "**********";
             string subject = "Your account is successfully created!";
-            string body = "<br/><br/> We are happy to tell you that your Gadget World account is successfully create. Now you can update your profile information" +
-                          "<a href='" + link + "'>" + link + "</a>";
+            string body =
+                "<br/><br/> We are happy to tell you that your Gadget World account is successfully create. Now you can update your profile information" +
+                "<a href='" + link + "'>" + link + "</a>";
 
             var smtp = new SmtpClient
 
@@ -267,22 +307,58 @@ namespace GadgetWorld.Controllers
 
 
 
-
-
-
-        [HttpGet]
-        public ActionResult CreateProduct()
-        {
-            return View();
-        }
-
-
-        [HttpPost]
-        public ActionResult CreateProduct(Product product)
-        {
-            db.Products.Add(product);
-            db.SaveChanges();
-            return View (product);
-        }
     }
 }
+
+
+
+
+
+
+
+
+
+//        //[Authorize]
+//        [HttpGet]
+//        public ActionResult CreateProduct()
+//        {
+
+//        IEnumerable<Category> GetCategoryList()
+//        {
+//            db.Categories.ToList();        
+//        }
+
+
+
+
+
+//        GetCategoryList()
+
+
+//        // ViewBag.UserTypeId = new SelectList(db.UserTypes, "Id", "UserTypeName");
+//        //ViewBag.CategoryName= new SelectList(db.Categories,"Id","CategoryName");
+//        //IEnumerable<SelectListItem> ProductType=Select(db.Categories
+
+//        //Product Product =new Product();
+//        //    Product.
+//        //    Product.DepartmetnId = db.Categories.Select(x => new SelectListItem
+//        //        {Value = x.CatagoryId.ToString(), Text = x.CatagoryType}).ToList();
+
+//        //    ViewBag.Product = Product;
+//        //    return View(Product);
+
+//    }
+
+
+
+
+//        //[Authorize]
+//        [HttpPost]
+//        public ActionResult CreateProduct(Product product)
+//        {
+//            db.Products.Add(product);
+//            db.SaveChanges();
+//            return View (product);
+//        }
+//    }
+//}

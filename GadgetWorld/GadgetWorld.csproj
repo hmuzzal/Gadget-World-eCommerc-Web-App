@@ -193,11 +193,24 @@
     <Compile Include="Migrations\201811290619497_product upadted.Designer.cs">
       <DependentUpon>201811290619497_product upadted.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811290633562_category added.cs" />
+    <Compile Include="Migrations\201811290633562_category added.Designer.cs">
+      <DependentUpon>201811290633562_category added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812030806082_product added.cs" />
+    <Compile Include="Migrations\201812030806082_product added.Designer.cs">
+      <DependentUpon>201812030806082_product added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812030826007_productIdNotNUllabe.cs" />
+    <Compile Include="Migrations\201812030826007_productIdNotNUllabe.Designer.cs">
+      <DependentUpon>201812030826007_productIdNotNUllabe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Crypto.cs" />
     <Compile Include="Models\GwDbContext.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCreateViewModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Models\UserType.cs" />
@@ -695,7 +708,6 @@
     <Content Include="Views\Admin\Details.cshtml" />
     <Content Include="Views\Admin\Edit.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Admin\View.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutMain.cshtml" />
     <Content Include="Views\Home\AfterLogin.cshtml" />
@@ -765,6 +777,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811290619497_product upadted.resx">
       <DependentUpon>201811290619497_product upadted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811290633562_category added.resx">
+      <DependentUpon>201811290633562_category added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812030806082_product added.resx">
+      <DependentUpon>201812030806082_product added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812030826007_productIdNotNUllabe.resx">
+      <DependentUpon>201812030826007_productIdNotNUllabe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
