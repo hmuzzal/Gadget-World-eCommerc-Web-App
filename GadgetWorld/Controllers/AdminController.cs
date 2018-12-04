@@ -81,6 +81,15 @@ namespace GadgetWorld.Controllers
         // GET: Admin/Create
         public ActionResult Create()
         {
+
+            ViewBag.Gender = db.Genders.Select(c => new SelectListItem
+            {
+                Value = c.GenderId.ToString(),
+                Text = c.GenderType
+            }).ToList();
+
+
+
             User user = new User();
             user.Type = "Admin";
             return View();
@@ -94,6 +103,14 @@ namespace GadgetWorld.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(User user)
         {
+
+            ViewBag.Gender = db.Genders.Select(c => new SelectListItem
+            {
+                Value = c.GenderType,
+                Text = c.GenderType
+            }).ToList();
+
+
             bool Status = false;
             string message = "";
             user.Type = "Admin";

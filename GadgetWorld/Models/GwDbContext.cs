@@ -17,6 +17,8 @@ namespace GadgetWorld.Models
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<Gender> Genders { get; set; }
         public System.Data.Entity.DbSet<GadgetWorld.Models.UserLoginModel> UserLoginModels { get; set; }
     }
 }

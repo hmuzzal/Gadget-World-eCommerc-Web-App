@@ -75,16 +75,23 @@
                             <span class="fas fa-envelope"></span>
                             <p><a href="mailto:info@gadgetworld.com">info@gadgetworld.com</a></p>
                         </li>
-                        <li><h1> @ViewBag.Message</h1></li>                                                                          
-                                <li style="float:right; "> 
-                                    @if (Request.IsAuthenticated)
-                                    {
-                                        using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
-                                        {
-                                            <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
-                                        }
-                                    }
-                                </li>                                                         
+                        <li><h1> @ViewBag.Message</h1></li>
+
+
+                    
+                        <li style="float:right; margin:5px;">
+                            @if (Request.IsAuthenticated)
+                            {
+                                using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+                                {
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
+                                }
+                            }
+                        </li>
+                        <li style="float: right; margin: 5px;">
+                            <p>@HttpContext.Current.User.Identity.Name</p>
+                        </li>
+
                         <li>
                         </li>
                         <li>

@@ -400,3 +400,6 @@ D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eComme
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.pdb
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.product2.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.product13123.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.errorsolved.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.undochanged.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.erslv.resources
