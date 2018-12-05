@@ -229,8 +229,13 @@
     <Compile Include="Migrations\201812041019075_er slv.Designer.cs">
       <DependentUpon>201812041019075_er slv.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812052112286_color model.cs" />
+    <Compile Include="Migrations\201812052112286_color model.Designer.cs">
+      <DependentUpon>201812052112286_color model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Crypto.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\GwDbContext.cs" />
@@ -829,6 +834,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812041019075_er slv.resx">
       <DependentUpon>201812041019075_er slv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812052112286_color model.resx">
+      <DependentUpon>201812052112286_color model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

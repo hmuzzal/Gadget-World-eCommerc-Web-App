@@ -79,41 +79,41 @@
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                        <li class="active">                                                                    
-                       
+                        <li class="active">
+
                             <a class="has-arrow" href="index.html">
 
                                 <i class="fa big-icon fa-home icon-wrap"></i>
                                 <span class="mini-click-non">Ecommerce</span>
                             </a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                
-                                <li>                                                                        
+
+                                <li>
+                                    @Html.ActionLink("Create Admin", "Create","Admin",
+                                        new { id = 1}, //   Route args if needed; null if not.
+                                        new {@class= "nav-link" }
+                                        )
+                                </li>
+
+                                <li>
+                                    @Html.ActionLink("Add Product", "CreateProduct","Admin",
+                                        new { id = 1}, //   Route args if needed; null if not.
+                                        new {@class= "nav-link" }
+                                        )
+                                </li>
+                                <li>
                                     @Html.ActionLink("Product List", "Index", "Admin",
                                         new { id = 1}, //   Route args if needed; null if not.
                                         new {@class= "nav-link" }
                                         )
                                 </li>
-                                
-                                <li>                                                                        
-                                    @Html.ActionLink("Product List", "Index","Admin",
-                                        new { id = 1}, //   Route args if needed; null if not.
-                                        new {@class= "nav-link" }
-                                        )
-                                </li>
-                                <li>                                                                        
+                                <li>
                                     @Html.ActionLink("Product List", "Index", "Admin",
                                         new { id = 1}, //   Route args if needed; null if not.
                                         new {@class= "nav-link" }
                                         )
                                 </li>
-                                <li>                                                                        
-                                    @Html.ActionLink("Product List", "Index", "Admin",
-                                        new { id = 1}, //   Route args if needed; null if not.
-                                        new {@class= "nav-link" }
-                                        )
-                                </li>
-                          
+
                             </ul>
                         </li>
                     </ul>
@@ -162,13 +162,13 @@
                                                     <span class="admin-name">@HttpContext.Current.User.Identity.Name</span>
 
                                                     <ul>
-                                                        <li align="center" >
+                                                        <li align="center">
 
                                                             @if (Request.IsAuthenticated)
                                                             {
-                                                                using (Html.BeginForm("Logout", "Admin", FormMethod.Post, new { id =                                     "logoutForm",style = "margin-left: 100px;color:white",align = "center" }))
+                                                                using (Html.BeginForm("Logout", "Admin", FormMethod.Post, new { id = "logoutForm", style = "margin-left: 100px;color:white", align = "center" }))
                                                                 {
-                                                             <a href="javascript:document.getElementById('logoutForm').submit                                         ()" style="color:white">Logout</a>
+                                                                    <a href="javascript:document.getElementById('logoutForm').submit                                         ()" style="color:white">Logout</a>
                                                                 }
                                                             }
 
@@ -664,14 +664,5 @@
     <script src="~/Content/Content_admin/js/main.js"></script>
 </body>
 </html>
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 
-    <script type="text/javascript">
-        $(function () { // will trigger when the document is ready
-            $('.datepicker').datepicker(); //Initialise any date pickers
-        });
-    </script>
-}
+@RenderSection("scripts", false)

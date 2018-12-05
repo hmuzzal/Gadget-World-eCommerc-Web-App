@@ -79,6 +79,7 @@ namespace GadgetWorld.Controllers
 
 
         // GET: Admin/Create
+        [Authorize]
         public ActionResult Create()
         {
 
@@ -259,6 +260,7 @@ namespace GadgetWorld.Controllers
         //}
 
         [HttpGet]
+        [Authorize]
         public ActionResult CreateProduct()
         {
             var model = new ProductCreateViewModel();
@@ -274,6 +276,14 @@ namespace GadgetWorld.Controllers
                 Value = c.CatagoryId.ToString(),
                 Text = c.CatagoryType
             }).ToList();
+
+
+            ViewBag.Color = db.Colors.Select(d => new SelectListItem
+            {
+                Value = d.ColorID.ToString(),
+                Text = d.ColorType
+            }).ToList();
+
 
 
 
@@ -292,6 +302,7 @@ namespace GadgetWorld.Controllers
         public ActionResult CreateProduct(Product product)
         {
 
+            bool Status = false;
 
             string FileName = Path.GetFileNameWithoutExtension(product.ImageFile.FileName);
             string Extensiton = Path.GetExtension(product.ImageFile.FileName);
@@ -305,11 +316,20 @@ namespace GadgetWorld.Controllers
                 Value = c.CatagoryId.ToString(),
                 Text = c.CatagoryType
             }).ToList();
-          
-         
+
+
+            ViewBag.Color = db.Colors.Select(d => new SelectListItem
+            {
+                Value = d.ColorID.ToString(),
+                Text = d.ColorType
+            }).ToList();
+
+
             db.Products.Add(product);
             db.SaveChanges();
             ModelState.Clear();
+            ViewBag.Message = "successfully updated";
+            ViewBag.Status  = true;
             return View();
 
         }

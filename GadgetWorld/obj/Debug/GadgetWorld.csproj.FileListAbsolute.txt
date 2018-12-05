@@ -403,3 +403,4 @@ D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eComme
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.dll
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.pdb
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csprojAssemblyReference.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.colormodel.resources
