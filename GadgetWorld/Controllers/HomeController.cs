@@ -19,10 +19,10 @@ namespace GadgetWorld.Controllers
         private GwDbContext db = new GwDbContext();
 
 
-       
 
 
 
+        //User Login
         [HttpGet]
         public ActionResult Index()
         {
