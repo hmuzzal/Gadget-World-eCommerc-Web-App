@@ -374,7 +374,6 @@ D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eComme
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\bin\System.Diagnostics.DiagnosticSource.xml
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csprojAssemblyReference.cache
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations._1.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations._2.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations._015.resources
@@ -393,13 +392,14 @@ D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eComme
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.productadded.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.productIdNotNUllabe.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.product1.resources
-D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.GenerateResource.cache
-D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.CoreCompileInputs.cache
-D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.CopyComplete
-D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.dll
-D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.pdb
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.product2.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.product13123.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.errorsolved.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.undochanged.resources
 D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.Migrations.erslv.resources
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.GenerateResource.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.CoreCompileInputs.cache
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csproj.CopyComplete
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.dll
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.pdb
+D:\J) Projects\Projects\PBL\Project 2\Application\New folder\Gadget-World-eCommerc-Web-App\GadgetWorld\obj\Debug\GadgetWorld.csprojAssemblyReference.cache

@@ -1,15 +1,78 @@
 ﻿@using System.ServiceModel.Channels
-@model GadgetWorld.Models.UserLoginModel
-
+@*@model GadgetWorld.Models.UserLoginModel*@
+@model GadgetWorld.Models.User
 @{
 
     Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
 }
 
 
-<h5 style="margin-top:100px">KravMAGa</h5>
+<div style="margin-top: 150px;">
+    <h5 style="color: Green;">@ViewBag.Message</h5>
+</div>
 
-<h5>KravMAGa</h5>
 
 
-<h5>KravMAGa</h5>
+
+<!-- //footer -->
+<!-- LOGIN-->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="register-form">
+                        <div class="register-form">
+                            <form action="#" method="post">
+                                <div class="fields-grid">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="styled-input">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Your Email" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+
+
+                                    <div class="styled-input">
+                                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "password" } })
+                                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-md-10">
+                                            <div class="checkbox">
+                                                @Html.EditorFor(model => model.RememberMe)
+                                                @Html.ValidationMessageFor(model => model.RememberMe, "", new { @class = "text-danger" })
+                                                @Html.LabelFor(model => model.RememberMe, htmlAttributes: new { @class = "control-label col-md-2" })
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <input type="submit" id="button_login" value="Login" class="btn subscrib-btnn" />
+                                    @Html.ActionLink("Sign Up", "Registration", "Home", new { @class = "btn subscrib-btnn" })
+                                    @*<button type="submit" class="btn subscrib-btnn">Login</button>*@
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

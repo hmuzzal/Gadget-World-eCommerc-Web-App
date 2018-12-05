@@ -151,7 +151,7 @@ namespace GadgetWorld.Controllers
 
             }
 
-
+            TempData["Message"] = message;
             ViewBag.Message = message;
             ViewBag.Status = Status;
             return View(user);

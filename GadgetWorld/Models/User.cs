@@ -44,12 +44,15 @@ namespace GadgetWorld.Models
         [StringLength(50, MinimumLength = 7)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-
+        
         [NotMapped]
         [DisplayName("Confirm Password")]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Please Re-Enter Your Password or Password Doesn't Match")]
         public string RepeatPassword { get; set; }
 
+        [NotMapped]
+        [Display(Name = "Remember Me")]
+        public bool RememberMe { get; set; }
     }
 }

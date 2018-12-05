@@ -18,26 +18,26 @@
 
 
 
-                        <li><h1> @ViewBag.Message</h1></li>
+<li><h1> @ViewBag.Message</h1></li>
 
 
-                    
-                        @*<li style="float:right; margin:5px;">
-                            @if (Request.IsAuthenticated)
-                            {
-                                using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
-                                {
-                                    <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
-                                }
-                            }
-                        </li>
-                        <li style="float: right; margin: 5px;">
-                            <p>@HttpContext.Current.User.Identity.Name</p>
-                        </li>*@
 
-                 
-   
-    @*@using (Html.BeginForm())
+@*<li style="float:right; margin:5px;">
+        @if (Request.IsAuthenticated)
+        {
+            using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+            {
+                <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
+            }
+        }
+    </li>
+    <li style="float: right; margin: 5px;">
+        <p>@HttpContext.Current.User.Identity.Name</p>
+    </li>*@
+
+
+
+@*@using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
 
@@ -55,8 +55,8 @@
                             <div class="register-form">
                                 <form action="#" method="post">
                                     <div class="fields-grid">
-                                        
-                                        
+
+
                                         @HttpContext.Current.User.Identity.Name
 
                                         @if (Request.IsAuthenticated)
@@ -86,6 +86,207 @@
 
 
 
+@*<!-- //footer -->
+<!-- LOGIN-->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="register-form">
+                        <div class="register-form">
+                            <form action="#" method="post">
+                                <div class="fields-grid">
+
+
+                                    @HttpContext.Current.User.Identity.Name
+
+                                    @if (Request.IsAuthenticated)
+                                    {
+                                        using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            <a href="javascript:document.getElementById('logoutForm').submit()" class="btn subscrib-btnn">Logout</a>
+                                        }
+                                    }
+
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+}*@@*<!-- //footer -->
+<!-- LOGIN-->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="register-form">
+                        <div class="register-form">
+                            <form action="#" method="post">
+                                <div class="fields-grid">
+
+
+                                    @HttpContext.Current.User.Identity.Name
+
+                                    @if (Request.IsAuthenticated)
+                                    {
+                                        using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            <a href="javascript:document.getElementById('logoutForm').submit()" class="btn subscrib-btnn">Logout</a>
+                                        }
+                                    }
+
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+}*@@*<!-- //footer -->
+<!-- LOGIN-->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="register-form">
+                        <div class="register-form">
+                            <form action="#" method="post">
+                                <div class="fields-grid">
+
+
+                                    @HttpContext.Current.User.Identity.Name
+
+                                    @if (Request.IsAuthenticated)
+                                    {
+                                        using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            <a href="javascript:document.getElementById('logoutForm').submit()" class="btn subscrib-btnn">Logout</a>
+                                        }
+                                    }
+
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+}
+       
+       
+       *@*<!-- //footer -->
+<!-- LOGIN-->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="register-form">
+                        <div class="register-form">
+                            <form action="#" method="post">
+                                <div class="fields-grid">
+
+
+                                    @HttpContext.Current.User.Identity.Name
+
+                                    @if (Request.IsAuthenticated)
+                                    {
+                                        using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            <a href="javascript:document.getElementById('logoutForm').submit()" class="btn subscrib-btnn">Logout</a>
+                                        }
+                                    }
+
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+}
+
+
+
+@section Scripts{
+
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
 
 
 

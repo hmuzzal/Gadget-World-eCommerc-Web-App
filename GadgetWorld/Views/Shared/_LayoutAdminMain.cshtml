@@ -1,6 +1,11 @@
-﻿<!doctype html>
+﻿
+<!DOCTYPE html>
+
 <html class="no-js" lang="en">
 <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Gadget World | jAdmin Panel</title>
@@ -8,61 +13,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
         ============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/Content_admin/img/favicon.ico">
     <!-- Google Fonts
         ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <!-- Bootstrap CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="~/Content/Content_admin/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="~/Content/Content_admin/css/font-awesome.min.css" rel="stylesheet" />
     <!-- owl.carousel CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link href="~/Content/Content_admin/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/Content_admin/css/owl.theme.css" rel="stylesheet" />
+    <link href="~/Content/Content_admin/css/owl.transitions.css" rel="stylesheet" />
     <!-- animate CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link href="~/Content/Content_admin/css/animate.css" rel="stylesheet" />
     <!-- normalize CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="~/Content/Content_admin/css/normalize.css" rel="stylesheet" />
     <!-- meanmenu icon CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <link href="~/Content/Content_admin/css/meanmenu.min.css" rel="stylesheet" />
     <!-- main CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/main.css">
+    <link href="~/Content/Content_admin/css/main.css" rel="stylesheet" />
     <!-- morrisjs CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/morrisjs/morris.css">
+    <link href="~/Content/Content_admin/css/morrisjs/morris.css" rel="stylesheet" />
     <!-- mCustomScrollbar CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link href="~/Content/Content_admin/css/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
     <!-- metisMenu CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+    <link href="~/Content/Content_admin/css/metisMenu/metisMenu.min.css" rel="stylesheet" />
+    <link href="~/Content/Content_admin/css/metisMenu/metisMenu-vertical.css" rel="stylesheet" />
     <!-- calendar CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <link href="~/Content/Content_admin/css/calendar/fullcalendar.min.css" rel="stylesheet" />
+    <link href="~/Content/Content_admin/css/calendar/fullcalendar.print.min.css" rel="stylesheet" />
     <!-- style CSS
         ============================================ -->
-    <link rel="stylesheet" href="style.css">
+    <link href="~/Content/Content_admin/style.css" rel="stylesheet" />
     <!-- responsive CSS
         ============================================ -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="~/Content/Content_admin/css/responsive.css" rel="stylesheet" />
     <!-- modernizr JS
         ============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="~/Content/Content_admin/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+
+
     <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+               <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+           <![endif]-->
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
@@ -72,20 +79,41 @@
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                        <li class="active">
+                        <li class="active">                                                                    
+                       
                             <a class="has-arrow" href="index.html">
+
                                 <i class="fa big-icon fa-home icon-wrap"></i>
                                 <span class="mini-click-non">Ecommerce</span>
                             </a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="index.html"><i class="fa fa-bullseye sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Dashboard v.1</span></a></li>
-                                <li><a title="Product List" href="product-list.html"><i class="fa fa-female sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Product List</span></a></li>
-                                <li><a title="Product Edit" href="product-edit.html"><i class="fa fa-bolt sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Product Edit</span></a></li>
-                                <li><a title="Product Detail" href="product-detail.html"><i class="fa fa-heart-o sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Product Detail</span></a></li>
-                                <li><a title="Product Cart" href="product-cart.html"><i class="fa fa-level-down sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Product Cart</span></a></li>
-                                <li><a title="Product Payment" href="product-payment.html"><i class="fa fa-location-arrow sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Product Payment</span></a></li>
-                                <li><a title="Analytics" href="analytics.html"><i class="fa fa-line-chart sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Analytics</span></a></li>
-                                <li><a title="Widgets" href="widgets.html"><i class="fa fa-magnet sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Widgets</span></a></li>
+                                
+                                <li>                                                                        
+                                    @Html.ActionLink("Product List", "Index", "Admin",
+                                        new { id = 1}, //   Route args if needed; null if not.
+                                        new {@class= "nav-link" }
+                                        )
+                                </li>
+                                
+                                <li>                                                                        
+                                    @Html.ActionLink("Product List", "Index","Admin",
+                                        new { id = 1}, //   Route args if needed; null if not.
+                                        new {@class= "nav-link" }
+                                        )
+                                </li>
+                                <li>                                                                        
+                                    @Html.ActionLink("Product List", "Index", "Admin",
+                                        new { id = 1}, //   Route args if needed; null if not.
+                                        new {@class= "nav-link" }
+                                        )
+                                </li>
+                                <li>                                                                        
+                                    @Html.ActionLink("Product List", "Index", "Admin",
+                                        new { id = 1}, //   Route args if needed; null if not.
+                                        new {@class= "nav-link" }
+                                        )
+                                </li>
+                          
                             </ul>
                         </li>
                     </ul>
@@ -99,12 +127,13 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="header-advance-area">
         <div class="header-top-area">
             <div class="container-fluid">
@@ -130,22 +159,34 @@
                                             <li class="nav-item">
                                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                     <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
-                                                    <span class="admin-name">Advanda Cro</span>
-                                                    <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                                                    <span class="admin-name">@HttpContext.Current.User.Identity.Name</span>
+
+                                                    <ul>
+                                                        <li align="center" >
+
+                                                            @if (Request.IsAuthenticated)
+                                                            {
+                                                                using (Html.BeginForm("Logout", "Admin", FormMethod.Post, new { id =                                     "logoutForm",style = "margin-left: 100px;color:white",align = "center" }))
+                                                                {
+                                                             <a href="javascript:document.getElementById('logoutForm').submit                                         ()" style="color:white">Logout</a>
+                                                                }
+                                                            }
+
+                                                        </li>
+                                                    </ul>
                                                 </a>
-                                                <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                    <li>
-                                                        <a href="register.html"><span class="fa fa-home author-log-ic"></span>Register</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="login.html"><span class="fa fa-lock author-log-ic"></span>Log Out</a>
-                                                    </li>
-                                                </ul>
+
+                                            <li>
+                                                @*<a href="register.html"><span class="fa fa-home author-log-ic"></span>Register</a>*@
                                             </li>
+                                            <li>
+
+                                                @*<a href="login.html"><span class="fa fa-lock author-log-ic"></span>Log Out</a>*@
+                                            </li>
+                                        </ul>
 
 
-
-
+                                        <li>
                                             <div role="menu" class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
 
                                                 <div class="tab-content custom-bdr-nt">
@@ -275,7 +316,8 @@
                                                 </div>
                                             </div>
 
-                                        </ul>
+                                        </li>
+
                                     </div>
                                 </div>
                             </div>
@@ -471,31 +513,26 @@
             </div>
         </div>
         <!-- Mobile Menu end -->
+        @*<div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="breadcome-heading">
 
-
-
-
-
-        <div class="breadcome-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="breadcome-list">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <div class="breadcome-heading">
-
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <ul class="breadcome-menu"></ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <ul class="breadcome-menu"></ul>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>*@
 
 
 
@@ -503,78 +540,7 @@
 
 
     </div>
-    <div class="section-admin container-fluid">
-        <div class="row admin text-center">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                            <h4 class="text-left text-uppercase"><b>Orders</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="col-xs-3 mar-bot-15 text-left">
-                                    <label class="label bg-green">30% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">10,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 78%;" class="progress-bar bg-green"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Tax Deduction</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-red">15% <i class="fa fa-level-down" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">5,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 38%;" class="progress-bar progress-bar-danger bg-red"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Revenue</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-blue">50% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">$70,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-blue"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Yearly Sales</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-purple">80% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">$100,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-purple"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
 
@@ -599,71 +565,79 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+
+    <div style="margin-left: 200px;margin-right:90px;margin-top:70px">
+        @RenderBody()
+    </div>
+
+
+
+
+
+
+
+
     <div class="product-new-list-area">
-        <div class="container-fluid">
-            <div class="row">
-
-            </div>
-        </div>
-
-
-        <div class="calender-area mg-tb-30">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="calender-inner">
-                            <div id=''></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
 
 
-
-        <div class="footer-copyright-area">
+        <div class="footer-copyright-area" style="margin-top:20px">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p>Copyright &copy; 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
+                            <p>Copyright &copy; 2018 <a href="">Gadget World |</a> All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
     <!-- jquery
         ============================================ -->
-    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="~/Content/Content_admin/js/vendor/jquery-1.11.3.min.js"></script>
     <!-- bootstrap JS
         ============================================ -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="~/Content/Content_admin/js/bootstrap.min.js"></script>
     <!-- wow JS
         ============================================ -->
-    <script src="js/wow.min.js"></script>
+    <script src="~/Content/Content_admin/js/wow.min.js"></script>
     <!-- price-slider JS
         ============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
+    <script src="~/Content/Content_admin/js/jquery-price-slider.js"></script>
     <!-- meanmenu JS
         ============================================ -->
-    <script src="js/jquery.meanmenu.js"></script>
+    <script src="~/Content/Content_admin/js/jquery.meanmenu.js"></script>
     <!-- owl.carousel JS
         ============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="~/Content/Content_admin/js/owl.carousel.min.js"></script>
     <!-- sticky JS
         ============================================ -->
-    <script src="js/jquery.sticky.js"></script>
+    <script src="~/Content/Content_admin/js/jquery.sticky.js"></script>
     <!-- scrollUp JS
         ============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="~/Content/Content_admin/js/jquery.scrollUp.min.js"></script>
     <!-- mCustomScrollbar JS
         ============================================ -->
-    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+    <script src="~/Content/Content_admin/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/Content_admin/js/scrollbar/mCustomScrollbar-active.js"></script>
     <!-- metisMenu JS
         ============================================ -->
     <script src="~/Content/Content_admin/js/metisMenu/metisMenu.min.js"></script>
@@ -690,3 +664,14 @@
     <script src="~/Content/Content_admin/js/main.js"></script>
 </body>
 </html>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () { // will trigger when the document is ready
+            $('.datepicker').datepicker(); //Initialise any date pickers
+        });
+    </script>
+}

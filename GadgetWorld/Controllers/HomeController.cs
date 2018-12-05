@@ -70,8 +70,8 @@ namespace GadgetWorld.Controllers
 
                             if (v.Type == "Admin")
                             {
-                                
-                                return RedirectToActionPermanent("Index", "Admin"); 
+
+                                return RedirectToActionPermanent("Index", "Admin");
 
                             }
 
@@ -80,7 +80,7 @@ namespace GadgetWorld.Controllers
 
                             else
                             {
-                              
+
                                 return RedirectToActionPermanent("AfterLogin", "Home");
                             }
 
@@ -199,7 +199,7 @@ namespace GadgetWorld.Controllers
 
 
 
-
+        [HttpGet]
         [Authorize]
         public ActionResult AfterLogin()
         {
@@ -214,19 +214,13 @@ namespace GadgetWorld.Controllers
 
 
         //User Logout
+
         
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }
-         
-
-
-
-
-
-      
 
 
 
@@ -236,9 +230,16 @@ namespace GadgetWorld.Controllers
 
 
 
-        public ActionResult Reg()
+
+
+
+
+
+
+
+        public ActionResult Registration()
         {
-            User user =new User();
+            User user = new User();
             user.Type = "Customer";
             return View();
         }
@@ -247,7 +248,7 @@ namespace GadgetWorld.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Reg(User user)
+        public ActionResult Registration(User user)
         {
             bool Status = false;
             string message = "";
@@ -258,9 +259,11 @@ namespace GadgetWorld.Controllers
             {
                 //Email is already Exists
                 var isExist = IsEmailExist(user.Email);
-                if(isExist)
+                if (isExist)
                 {
-                    ModelState.AddModelError("EmailExists","Email already exists");
+                    ModelState.AddModelError("EmailExists", "Email already exists");
+                    ViewBag.Message = message;
+                    ViewBag.Status = Status;
                     return View(user);
                 }
 
@@ -269,18 +272,21 @@ namespace GadgetWorld.Controllers
 
 
                 #region Password Hashing            
+
                 user.Password = Crypto.Hash(user.Password);
-                user.RepeatPassword = Crypto.Hash(user.RepeatPassword);            
+                user.RepeatPassword = Crypto.Hash(user.RepeatPassword);
+
                 #endregion
 
 
 
                 #region Save to Database
-                using (GwDbContext context=new GwDbContext())
+
+                using (GwDbContext context = new GwDbContext())
                 {
 
-                   
-               
+
+
                     context.Users.Add(user);
                     context.SaveChanges();
 
@@ -289,8 +295,9 @@ namespace GadgetWorld.Controllers
                     //message = "Registration Successful"+"An email has been to your Email:"+user.Email;
                     message = "Registered successfully";
                     Status = true;
-                   
+
                 }
+
                 #endregion
             }
             else
@@ -302,12 +309,13 @@ namespace GadgetWorld.Controllers
             TempData["Message"] = message;
             ViewBag.Message = message;
             ViewBag.Status = Status;
-            return RedirectToAction("Index", "Home");
+            //return RedirectToAction("Index", "Home");
+            return View();
         }
 
 
-       
-    
+
+
 
         public ActionResult About()
         {
@@ -333,6 +341,7 @@ namespace GadgetWorld.Controllers
             {
                 db.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -350,12 +359,14 @@ namespace GadgetWorld.Controllers
             using (GwDbContext context = new GwDbContext())
             {
                 var v = context.Users.Where(a => a.Email == email).FirstOrDefault();
-                return v != null;
+             return v != null;
+           
             }
 
         }
+    
 
-        [NonAction]
+    [NonAction]
         public void SendVerificationEmail(string email)
         {
             //var scheme = Request.Url.Scheme;

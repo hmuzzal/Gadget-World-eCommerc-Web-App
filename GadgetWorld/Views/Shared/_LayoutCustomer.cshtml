@@ -1,5 +1,5 @@
 ﻿@using System.ServiceModel.Channels
-@model GadgetWorld.Models.UserLoginModel
+
 
 <!DOCTYPE html>
 
@@ -73,7 +73,7 @@
             <div class="container-fluid">
                 <div class="hedder-up row">
                     <div class="col-lg-3 col-md-3 logo-head">
-                        <h1>@Html.ActionLink("Gadget World", "Index","Home")</h1>
+                        <h1>@Html.ActionLink("Gadget World", "Index", "Home")</h1>
                     </div>
                     <div class="col-lg-5 col-md-6 search-right">
                         <form class="form-inline my-lg-0">
@@ -126,7 +126,7 @@
                             )
 
                         </li>
-                      
+
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -145,22 +145,22 @@
                                     new { id = 1}, //   Route args if needed; null if not.
                                     new {@class="nav-link"}
                                     )
-                            
+
                             </div>
-                            <li class="nav-item">
-                                @Html.ActionLink("About", "Index","Home",
-                                    new { id = 1}, //   Route args if needed; null if not.
-                                    new {@class= "nav-link" }
-                                    )
+                        <li class="nav-item">
+                            @Html.ActionLink("About", "Index","Home",
+                                new { id = 1}, //   Route args if needed; null if not.
+                                new {@class= "nav-link" }
+                                )
 
-                            </li>
-                            <li class="nav-item">
-                                @Html.ActionLink("Contact", "Index","Home",
-                                    new { id = 1}, //   Route args if needed; null if not.
-                                    new {@class= "nav-link" }
-                                    )
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Contact", "Index","Home",
+                                new { id = 1}, //   Route args if needed; null if not.
+                                new {@class= "nav-link" }
+                                )
 
-                            </li>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -174,24 +174,20 @@
 
 
 
-    
 
 
-<!-- VIEW -->
-<section class="about py-lg-4 py-md-3 py-sm-3 py-3 text-center"  style="margin-bottom: 1px;">
-    <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-        <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">About Toys</h3>
-        <div class="about-products-w3layouts">
-            <P> @RenderBody()</P>
+
+    <!-- VIEW -->
+    <section class="about py-lg-4 py-md-3 py-sm-3 py-3 text-center" style="margin-bottom: 1px;">
+        <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">About Toys</h3>
+            <div class="about-products-w3layouts">
+                <P> @RenderBody()</P>
+            </div>
         </div>
-    </div>
-</section>
-<!-- //VIEW -->
-    
-
-
-
-<!--Product-about-->
+    </section>
+    <!-- //VIEW -->
+    <!--Product-about-->
     <section class="about py-lg-4 py-md-3 py-sm-3 py-3" style="margin-bottom: 1px; background-color:#56BA67">
         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
             <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">About Gadget-World</h3>
@@ -269,76 +265,15 @@
     </section>
     <!--//subscribe-->
     <!-- footer -->
-<footer class="py-lg-4 py-md-3 py-sm-3 py-3 text-center">
-    <div class="copy-agile-right">
-        <p>
-            © 2018 Gadget World | All Rights Reserved | Design by <a href="" target="_blank">Gadget World</a>
-        </p>
-    </div>
-</footer>
-
-    <!-- //footer -->
-    <!-- LOGIN-->
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="register-form">
-                            <div class="register-form">
-                                <form action="#" method="post">
-                                    <div class="fields-grid">
-                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                                        <div class="styled-input">
-                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Your Email" } })
-                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                                        </div>
-
-
-                                        <div class="styled-input">
-                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "password" } })
-                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <div class="col-md-10">
-                                                <div class="checkbox">
-                                                    @Html.EditorFor(model => model.RememberMe)
-                                                    @Html.ValidationMessageFor(model => model.RememberMe, "", new { @class = "text-danger" })
-                                                    @Html.LabelFor(model => model.RememberMe, htmlAttributes: new { @class = "control-label col-md-2" })
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-                                        <input type="submit" id="button_login" value="Login" class="btn subscrib-btnn" />
-                                        @Html.ActionLink("Sign Up", "Reg", "Home", new { @class = "btn subscrib-btnn" })
-                                        @*<button type="submit" class="btn subscrib-btnn">Login</button>*@
-
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <footer class="py-lg-4 py-md-3 py-sm-3 py-3 text-center">
+        <div class="copy-agile-right">
+            <p>
+                © 2018 Gadget World | All Rights Reserved | Design by <a href="" target="_blank">Gadget World</a>
+            </p>
         </div>
+    </footer>
 
-    }
+    
 
 
 
@@ -471,9 +406,4 @@
 </body>
 </html>
 
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-}
+@RenderSection("scripts", false)
