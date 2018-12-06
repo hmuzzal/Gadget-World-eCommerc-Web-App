@@ -137,103 +137,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811220535016_1.cs" />
-    <Compile Include="Migrations\201811220535016_1.Designer.cs">
-      <DependentUpon>201811220535016_1.cs</DependentUpon>
+    <Compile Include="Migrations\201812060440241_first migration.cs" />
+    <Compile Include="Migrations\201812060440241_first migration.Designer.cs">
+      <DependentUpon>201812060440241_first migration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811220539036_2.cs" />
-    <Compile Include="Migrations\201811220539036_2.Designer.cs">
-      <DependentUpon>201811220539036_2.cs</DependentUpon>
+    <Compile Include="Migrations\201812060552536_Unknown.cs" />
+    <Compile Include="Migrations\201812060552536_Unknown.Designer.cs">
+      <DependentUpon>201812060552536_Unknown.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811221009275_015.cs" />
-    <Compile Include="Migrations\201811221009275_015.Designer.cs">
-      <DependentUpon>201811221009275_015.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221020398_4.cs" />
-    <Compile Include="Migrations\201811221020398_4.Designer.cs">
-      <DependentUpon>201811221020398_4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221023359_01.cs" />
-    <Compile Include="Migrations\201811221023359_01.Designer.cs">
-      <DependentUpon>201811221023359_01.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221024226_02.cs" />
-    <Compile Include="Migrations\201811221024226_02.Designer.cs">
-      <DependentUpon>201811221024226_02.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221026446_04.cs" />
-    <Compile Include="Migrations\201811221026446_04.Designer.cs">
-      <DependentUpon>201811221026446_04.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221030005_05.cs" />
-    <Compile Include="Migrations\201811221030005_05.Designer.cs">
-      <DependentUpon>201811221030005_05.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221247089_1134435353.cs" />
-    <Compile Include="Migrations\201811221247089_1134435353.Designer.cs">
-      <DependentUpon>201811221247089_1134435353.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811221248021_00001.cs" />
-    <Compile Include="Migrations\201811221248021_00001.Designer.cs">
-      <DependentUpon>201811221248021_00001.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811230410416_97931231.cs" />
-    <Compile Include="Migrations\201811230410416_97931231.Designer.cs">
-      <DependentUpon>201811230410416_97931231.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811230643355_879871323.cs" />
-    <Compile Include="Migrations\201811230643355_879871323.Designer.cs">
-      <DependentUpon>201811230643355_879871323.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811230853310_35553454.cs" />
-    <Compile Include="Migrations\201811230853310_35553454.Designer.cs">
-      <DependentUpon>201811230853310_35553454.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811290619497_product upadted.cs" />
-    <Compile Include="Migrations\201811290619497_product upadted.Designer.cs">
-      <DependentUpon>201811290619497_product upadted.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811290633562_category added.cs" />
-    <Compile Include="Migrations\201811290633562_category added.Designer.cs">
-      <DependentUpon>201811290633562_category added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812030806082_product added.cs" />
-    <Compile Include="Migrations\201812030806082_product added.Designer.cs">
-      <DependentUpon>201812030806082_product added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812030826007_productIdNotNUllabe.cs" />
-    <Compile Include="Migrations\201812030826007_productIdNotNUllabe.Designer.cs">
-      <DependentUpon>201812030826007_productIdNotNUllabe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812031017218_product 1.cs" />
-    <Compile Include="Migrations\201812031017218_product 1.Designer.cs">
-      <DependentUpon>201812031017218_product 1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812031101454_product 2.cs" />
-    <Compile Include="Migrations\201812031101454_product 2.Designer.cs">
-      <DependentUpon>201812031101454_product 2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812031148505_product 13123.cs" />
-    <Compile Include="Migrations\201812031148505_product 13123.Designer.cs">
-      <DependentUpon>201812031148505_product 13123.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812040923179_error-solved.cs" />
-    <Compile Include="Migrations\201812040923179_error-solved.Designer.cs">
-      <DependentUpon>201812040923179_error-solved.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812040933093_undo changed.cs" />
-    <Compile Include="Migrations\201812040933093_undo changed.Designer.cs">
-      <DependentUpon>201812040933093_undo changed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812041019075_er slv.cs" />
-    <Compile Include="Migrations\201812041019075_er slv.Designer.cs">
-      <DependentUpon>201812041019075_er slv.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812052112286_color model.cs" />
-    <Compile Include="Migrations\201812052112286_color model.Designer.cs">
-      <DependentUpon>201812052112286_color model.cs</DependentUpon>
+    <Compile Include="Migrations\201812060556117_image.cs" />
+    <Compile Include="Migrations\201812060556117_image.Designer.cs">
+      <DependentUpon>201812060556117_image.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\ProductViewModel.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Crypto.cs" />
@@ -747,6 +665,8 @@
     <Content Include="Views\Shared\_LayoutCustomerAfterLogin.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminMain.cshtml" />
     <Content Include="Views\Admin\Create.cshtml" />
+    <Content Include="Views\Admin\CreateCategory.cshtml" />
+    <Content Include="Views\Admin\ProductList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -766,77 +686,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811220535016_1.resx">
-      <DependentUpon>201811220535016_1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812060440241_first migration.resx">
+      <DependentUpon>201812060440241_first migration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811220539036_2.resx">
-      <DependentUpon>201811220539036_2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812060552536_Unknown.resx">
+      <DependentUpon>201812060552536_Unknown.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221009275_015.resx">
-      <DependentUpon>201811221009275_015.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221020398_4.resx">
-      <DependentUpon>201811221020398_4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221023359_01.resx">
-      <DependentUpon>201811221023359_01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221024226_02.resx">
-      <DependentUpon>201811221024226_02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221026446_04.resx">
-      <DependentUpon>201811221026446_04.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221030005_05.resx">
-      <DependentUpon>201811221030005_05.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221247089_1134435353.resx">
-      <DependentUpon>201811221247089_1134435353.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811221248021_00001.resx">
-      <DependentUpon>201811221248021_00001.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811230410416_97931231.resx">
-      <DependentUpon>201811230410416_97931231.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811230643355_879871323.resx">
-      <DependentUpon>201811230643355_879871323.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811230853310_35553454.resx">
-      <DependentUpon>201811230853310_35553454.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811290619497_product upadted.resx">
-      <DependentUpon>201811290619497_product upadted.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811290633562_category added.resx">
-      <DependentUpon>201811290633562_category added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812030806082_product added.resx">
-      <DependentUpon>201812030806082_product added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812030826007_productIdNotNUllabe.resx">
-      <DependentUpon>201812030826007_productIdNotNUllabe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812031017218_product 1.resx">
-      <DependentUpon>201812031017218_product 1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812031101454_product 2.resx">
-      <DependentUpon>201812031101454_product 2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812031148505_product 13123.resx">
-      <DependentUpon>201812031148505_product 13123.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812040923179_error-solved.resx">
-      <DependentUpon>201812040923179_error-solved.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812040933093_undo changed.resx">
-      <DependentUpon>201812040933093_undo changed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812041019075_er slv.resx">
-      <DependentUpon>201812041019075_er slv.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812052112286_color model.resx">
-      <DependentUpon>201812052112286_color model.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812060556117_image.resx">
+      <DependentUpon>201812060556117_image.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

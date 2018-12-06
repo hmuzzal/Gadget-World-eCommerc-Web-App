@@ -13,6 +13,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using GadgetWorld.Migrations;
 using GadgetWorld.Models;
 using Microsoft.Ajax.Utilities;
 
@@ -83,9 +84,11 @@ namespace GadgetWorld.Controllers
         public ActionResult Create()
         {
 
+
+
             ViewBag.Gender = db.Genders.Select(c => new SelectListItem
             {
-                Value = c.GenderId.ToString(),
+                Value = c.GenderType.ToString(),
                 Text = c.GenderType
             }).ToList();
 
@@ -105,25 +108,33 @@ namespace GadgetWorld.Controllers
         public ActionResult Create(User user)
         {
 
-            ViewBag.Gender = db.Genders.Select(c => new SelectListItem
-            {
-                Value = c.GenderType,
-                Text = c.GenderType
-            }).ToList();
-
-
             bool Status = false;
             string message = "";
             user.Type = "Admin";
 
+            ViewBag.Gender = db.Genders.Select(c => new SelectListItem
+            {
+                Value = c.GenderType.ToString(),
+                Text = c.GenderType
+            }).ToList();
+
+
+            //Model Validation
             if (ModelState.IsValid)
             {
+                //Email is already Exists
                 var isExist = IsEmailExist(user.Email);
                 if (isExist)
                 {
                     ModelState.AddModelError("EmailExists", "Email already exists");
+                    ViewBag.Message = message;
+                    ViewBag.Status = Status;
                     return View(user);
                 }
+
+
+
+
 
                 #region Password Hashing            
 
@@ -134,18 +145,26 @@ namespace GadgetWorld.Controllers
 
 
 
+                #region Save to Database
+
+                using (GwDbContext context = new GwDbContext())
+                {
 
 
-                db.Users.Add(user);
-                db.SaveChanges();
 
-                message = "successful";
-                Status = true;
+                    context.Users.Add(user);
+                    context.SaveChanges();
 
-                //return RedirectToAction("Index");
+                    //send email to user
+                    //SendVerificationEmail(user.Email);
+                    //message = "Registration Successful"+"An email has been to your Email:"+user.Email;
+                    message = "Registered successfully";
+                    Status = true;
 
+                }
+
+                #endregion
             }
-
             else
             {
                 message = "Invalid Request";
@@ -156,6 +175,7 @@ namespace GadgetWorld.Controllers
             ViewBag.Message = message;
             ViewBag.Status = Status;
             return View(user);
+        
         }
 
 
@@ -240,53 +260,10 @@ namespace GadgetWorld.Controllers
 
 
 
-
-
-        //[HttpGet]
-        //public ActionResult CreateProduct()
-        //{
-
-
-        //    ViewBag.Category = db.Categories.Select(c => new SelectListItem
-        //    {
-        //        Value = c.CatagoryId.ToString(),
-        //        Text = c.CatagoryType
-        //    }).ToList();
-
-
-
-        //    return View();
-
-        //}
-
         [HttpGet]
         [Authorize]
-        public ActionResult CreateProduct()
+        public ActionResult CreateCategory()
         {
-            var model = new ProductCreateViewModel();
-            //model.CategoryList = db.Categories.Select(c => new SelectListItem
-            //{
-            //    Value = c.CatagoryId.ToString(),
-            //    Text = c.CatagoryType
-            //}).ToList();
-
-
-            ViewBag.Category = db.Categories.Select(c => new SelectListItem
-            {
-                Value = c.CatagoryId.ToString(),
-                Text = c.CatagoryType
-            }).ToList();
-
-
-            ViewBag.Color = db.Colors.Select(d => new SelectListItem
-            {
-                Value = d.ColorID.ToString(),
-                Text = d.ColorType
-            }).ToList();
-
-
-
-
             return View();
 
         }
@@ -296,12 +273,65 @@ namespace GadgetWorld.Controllers
 
 
 
+        [HttpPost]
+        [Authorize]
+        public ActionResult CreateCategory(Category category)
+        {
+            db.Categories.Add(category);
+            db.SaveChanges();
+            ModelState.Clear();
+            ViewBag.Message = "successfully added";
+            ViewBag.Status = true;
+            return View();
 
+        }
+
+
+
+
+
+
+        [HttpGet]
+        [Authorize]
+        //[ValidateAntiForgeryToken]
+        public ActionResult CreateProduct()
+        {
+            var model = new ProductCreateViewModel();
+     
+
+            ViewBag.Category = db.Categories.Select(c => new SelectListItem
+            {
+                Value = c.CatagoryType.ToString(),
+                Text = c.CatagoryType
+            }).ToList();
+
+
+
+            ViewBag.Color = db.Colors.Select(d => new SelectListItem
+            {
+                Value = d.ColorType.ToString(),
+                Text = d.ColorType
+            }).ToList();
+
+
+
+            
+
+
+
+            return View();
+
+        }
+
+
+
+   
 
         [HttpPost]
         public ActionResult CreateProduct(Product product)
         {
 
+            string message = null;
             bool Status = false;
 
             string FileName = Path.GetFileNameWithoutExtension(product.ImageFile.FileName);
@@ -313,17 +343,30 @@ namespace GadgetWorld.Controllers
 
             ViewBag.Category=db.Categories.Select(c => new SelectListItem
             {
-                Value = c.CatagoryId.ToString(),
+                Value = c.CatagoryType.ToString(),
                 Text = c.CatagoryType
             }).ToList();
 
-
             ViewBag.Color = db.Colors.Select(d => new SelectListItem
             {
-                Value = d.ColorID.ToString(),
+                Value = d.ColorType.ToString(),
                 Text = d.ColorType
             }).ToList();
 
+
+            var isExist = IsProductExist(product.ProductName);
+            if (isExist)
+            {
+                {
+                    ModelState.AddModelError("ProductsExists", "Product already exists. Please update it");
+                    ViewBag.Message = message;
+                    ViewBag.Status = Status;
+                    return View(product);
+                   
+
+                }
+            }
+         
 
             db.Products.Add(product);
             db.SaveChanges();
@@ -335,6 +378,49 @@ namespace GadgetWorld.Controllers
         }
 
 
+
+
+
+
+
+
+        [HttpGet]
+        [Authorize]
+        //[ValidateAntiForgeryToken]
+        public ActionResult ProductList()
+        {
+
+
+            //Product product = new Product();
+
+            //product = db.Products.Where(x => x.ImagePath == ImagePath).FirstOrDefault();
+
+
+            // ViewBag.Product = product;
+
+            List<Product> products = db.Products.ToList();
+
+            ViewBag.Products = products;
+
+            return View(products);
+
+        }
+
+
+
+
+
+
+        [NonAction]
+        public bool IsProductExist(string product)
+        {
+            using (GwDbContext context = new GwDbContext())
+            {
+                var v = context.Products.Where(a => a.ProductName == product).FirstOrDefault();
+                return v!=null;
+            }
+
+        }
 
 
 
@@ -404,51 +490,3 @@ namespace GadgetWorld.Controllers
 
 
 
-
-
-
-
-//        //[Authorize]
-//        [HttpGet]
-//        public ActionResult CreateProduct()
-//        {
-
-//        IEnumerable<Category> GetCategoryList()
-//        {
-//            db.Categories.ToList();        
-//        }
-
-
-
-
-
-//        GetCategoryList()
-
-
-//        // ViewBag.UserTypeId = new SelectList(db.UserTypes, "Id", "UserTypeName");
-//        //ViewBag.CategoryName= new SelectList(db.Categories,"Id","CategoryName");
-//        //IEnumerable<SelectListItem> ProductType=Select(db.Categories
-
-//        //Product Product =new Product();
-//        //    Product.
-//        //    Product.DepartmetnId = db.Categories.Select(x => new SelectListItem
-//        //        {Value = x.CatagoryId.ToString(), Text = x.CatagoryType}).ToList();
-
-//        //    ViewBag.Product = Product;
-//        //    return View(Product);
-
-//    }
-
-
-
-
-//        //[Authorize]
-//        [HttpPost]
-//        public ActionResult CreateProduct(Product product)
-//        {
-//            db.Products.Add(product);
-//            db.SaveChanges();
-//            return View (product);
-//        }
-//    }
-//}

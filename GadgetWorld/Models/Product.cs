@@ -16,9 +16,11 @@ namespace GadgetWorld.Models
         [DisplayName("Product Category")]
 
         [Display(Name = "Category")]
-        public int CategoryId { get; set; }
+        [Required(ErrorMessage = "Please Select Category")]
+        public string Category { get; set; }
 
         [DisplayName("Product Name")]
+        [Required(ErrorMessage = "Please Select Product")]
         public string ProductName { get; set; }
 
         public string Description { get; set; }
@@ -33,12 +35,17 @@ namespace GadgetWorld.Models
         //public string ImageLink { get; set; }
 
 
-        [DisplayName("Upload Image")]
+        [DisplayName("Image")]
+        [Required(ErrorMessage = "Please Select Product Image")]
         public string ImagePath { get; set; }
 
+
+        [NotMapped]
         public string Title { get; set; }
 
         [NotMapped]
+        [DisplayName("Upload Image")]
+        [Required(ErrorMessage = "Please Select Product Image")]
         public HttpPostedFileBase ImageFile { get; set; }
 
     }

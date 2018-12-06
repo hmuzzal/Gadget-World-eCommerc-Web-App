@@ -9,8 +9,9 @@ using System.Web.Mvc;
 
 namespace GadgetWorld.Models
 {
-    public class ProductCreateViewModel
+    public class Image
     {
+
         [Key]
         public int ProductId { get; set; }
 
@@ -44,11 +45,10 @@ namespace GadgetWorld.Models
         public string Title { get; set; }
 
         [NotMapped]
-        [DisplayName("Upload Image")]
+        [DisplayName("Image")]
         [Required(ErrorMessage = "Please Select Product Image")]
         public HttpPostedFileBase ImageFile { get; set; }
 
         public List<SelectListItem> CategoryList { get; set; }
     }
 }
-
